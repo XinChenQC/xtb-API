@@ -1,0 +1,2 @@
+ifort -I/home/xchen/Software/xtb-source/xtb/build_intel/xtb@sta  -c gfn2.f90
+ifort gfn2.o libxtb.a -debug -CB -traceback -Wl,--no-undefined -Wl,--as-needed -Wl,--start-group libxtb.a -static -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -i8 -lm -ldl -pthread 
